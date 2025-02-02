@@ -1,0 +1,26 @@
+.HeaderCard,.HeaderCardOne
+{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.HeaderCardOne{
+    gap:3rem;
+}
+.PlayCard,.BookCard,.TrainerCard,.LoginCard
+{
+    display:flex;
+    justify-content: space-between;
+    gap:0.5rem;
+}
+/* icon css */
+.badmitonPlay
+{
+    height: 13px;
+    width: 20px;
+}
+.bookslot,.trainer,.avatar
+{
+    height: 20px;
+    width: 20px;
+}
