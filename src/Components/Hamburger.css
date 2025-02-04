@@ -1,0 +1,42 @@
+.navbar-mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-hamb {
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+
+  @media (min-width: 768px) {
+    .navbar-mobile{
+        display: none;
+    }
+
+}

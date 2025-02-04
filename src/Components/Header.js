@@ -4,35 +4,42 @@ import badmintonImage from '../Assets/badminton.png';
 import bookslot from '../Assets/booking-online.png';
 import trainer from '../Assets/coach.png';
 import avatar from '../Assets/avatar.png';
+import Hamburger from './Hamburger';
 
 const Header = () => {
+    
   return (
-    <div className='HeaderCard'>
-      <div className='HeaderCardOne'>
-        <div>FieldUp</div>
-        <div>Search</div>
-        <div className='PlayCard'>
-            <img className="badmitonPlay" src={badmintonImage} alt="Badminton"/>
-            <text>Play</text>
-        </div>
-        <div className='BookCard'>
-            <img className="bookslot" src={bookslot} alt="bookslot"/>
-            <text>Book</text>
-        </div>
-        <div className='TrainerCard'>
-            <img className="trainer" src={trainer} alt="trainer"/>
-            <text>Trainer</text>
+    <header className='header'>
+      <div className='header-left'>
+        <div className='logo'>FieldUp</div>
+        <div className='search-container'>
+          <input type='search' placeholder='Search' className='search-box' />
         </div>
       </div>
-
-      <div className='HeaderCard'>
-        <div className='LoginCard'>
-            <img className="avatar" src={avatar} alt="avatar"/>
-            <text>Login / Signup</text>
+      
+      <nav className='nav-links'>
+        <div className='nav-item'>
+          <img className='icon' src={badmintonImage} alt='Badminton' />
+          <span>Play</span>
         </div>
+        <div className='nav-item'>
+          <img className='icon' src={bookslot} alt='Book Slot' />
+          <span>Book</span>
+        </div>
+        <div className='nav-item'>
+          <img className='icon' src={trainer} alt='Trainer' />
+          <span>Trainer</span>
+        </div>
+      </nav>
+      
+      <div className='login-container'>
+        <img className='icon' src={avatar} alt='User Avatar' />
+        <span>Login / Signup</span>
       </div>
-    </div>
-  )
-}
+      
+    <Hamburger/>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
