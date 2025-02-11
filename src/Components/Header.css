@@ -49,6 +49,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-item span {
@@ -75,7 +76,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .login-container {
         display: none;
     }
@@ -123,4 +124,14 @@
     .search-box {
         display: none;
     }
+}
+
+.card-color{
+    color:rgb(78, 204, 78);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
 }
